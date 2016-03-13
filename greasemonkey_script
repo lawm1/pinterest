@@ -1,0 +1,19 @@
+// ==UserScript==
+// @name        Remove Picked For You
+// @namespace   bethmcmillan.com
+// @include     *
+// @version     1
+// @grant       none
+// ==/UserScript==
+
+function hide_picked_for_you() {
+divs=document.getElementsByClassName("creditFooter");
+  for(i=0;i<divs.length;i++)
+  {if (divs[i].innerHTML.indexOf('Picked for') != -1 || divs[i].innerHTML.indexOf('Promoted') != -1)
+  {divs[i].parentNode.parentNode.parentNode.style.visibility='hidden'}
+  }
+}
+
+window.setInterval(function(){
+  hide_picked_for_you();
+}, (5000));
