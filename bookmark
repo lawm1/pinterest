@@ -1,0 +1,1 @@
+javascript:(function(){divs=document.getElementsByClassName('creditFooter');for(i=0;i<divs.length;i++){if%20(divs[i].innerHTML.indexOf('Picked%20for')%20!=%20-1%20||%20divs[i].innerHTML.indexOf('Promoted')%20!=%20-1){divs[i].parentNode.parentNode.parentNode.style.visibility='hidden'}}})();
